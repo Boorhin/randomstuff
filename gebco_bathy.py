@@ -41,7 +41,7 @@ def _cell_bounds(points, bound_position=0.5):
 data=nc.Dataset("gebco_2020_netcdf/GEBCO_2020.nc")
 el =data ["elevation"]
 ratio = 240 #/60minutes /15 secs arc
-factor=10
+factor=10 #1 to 240
 subset=el[::int(ratio/factor),::int(ratio/factor)]#.astype(np.float)#find a way to link them with coord
 # Approximate radius of the Earth
 RADIUS = 6371000
