@@ -4,6 +4,8 @@ import pyvista as pv
 from pyvistaqt import BackgroundPlotter
 from pyproj import Transformer
 
+#Inspired by https://docs.pyvista.org/examples/02-plot/spherical.html
+
 def _cell_bounds(points, bound_position=0.5):
     """
     Calculate coordinate cell boundaries.
