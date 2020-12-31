@@ -38,7 +38,7 @@ def _cell_bounds(points, bound_position=0.5):
     return bounds
 
 ### GEBCO_2020 data are downloaded from https://www.gebco.net/data_and_products/gridded_bathymetry_data/
-data=nc.Dataset("/media/julien/CAE7-370D/gebco_2020_netcdf/GEBCO_2020.nc")
+data=nc.Dataset("gebco_2020_netcdf/GEBCO_2020.nc")
 el =data ["elevation"]
 ratio = 240 #/60minutes /15 secs arc
 factor=10
