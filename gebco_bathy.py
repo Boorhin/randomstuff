@@ -2,7 +2,7 @@ import netCDF4 as nc
 import numpy as np
 import pyvista as pv
 from pyvistaqt import BackgroundPlotter
-from pyproj import Transformer
+#from pyproj import Transformer
 
 #Inspired by https://docs.pyvista.org/examples/02-plot/spherical.html
 
